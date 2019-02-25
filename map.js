@@ -71,8 +71,8 @@ marker1.setLngLat( [-46.69185,-23.63451])
 marker1.addTo(map)
 
 let popup1 = new mapboxgl.Popup()
-popup1.setHTML('This is the first apartment I lived')
-marker1.setPopup(popup1)
+popup1.setHTML('This is the fisrt apartment I lived<br /><img src="https://cdn.123i.com.br/photo/catalog/large/frontphoto/09/50/0950ba6872d02c349a2d51a63ce4a929/0950ba6872d02c349a2d51a63ce4a929.jpg" />')
+marker2.setPopup(popup2)
 
 // Marcador2 - Hospital I was born
 let marker2 = new mapboxgl.Marker()
@@ -89,7 +89,7 @@ marker3.setLngLat( [-46.64371,-23.57746])
 marker3.addTo(map)
 
 let popup3 = new mapboxgl.Popup()
-popup3.setHTML('This is the school I went')
+popup3.setHTML('This is the school I went <br /><img src="https://abrilveja.files.wordpress.com/2018/04/brasil-colegio-bandeirantes-sp-20070607-001.jpg" />')
 marker3.setPopup(popup3)
 
 // Marcador4 - Undergrad
