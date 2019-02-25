@@ -72,7 +72,7 @@ marker1.addTo(map)
 
 let popup1 = new mapboxgl.Popup()
 popup1.setHTML('This is the fisrt apartment I lived<br /><img src="https://cdn.123i.com.br/photo/catalog/large/frontphoto/09/50/0950ba6872d02c349a2d51a63ce4a929/0950ba6872d02c349a2d51a63ce4a929.jpg" />')
-marker2.setPopup(popup2)
+marker1.setPopup(popup1)
 
 // Marcador2 - Hospital I was born
 let marker2 = new mapboxgl.Marker()
