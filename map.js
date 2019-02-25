@@ -62,7 +62,7 @@ marker.setLngLat([ -46.65673,-23.60534])
 marker.addTo(map)
 
 let popup = new mapboxgl.Popup()
-popup.setHTML('This is the house I lived from 1992 to 2018<br /><img src="http://www.imovelguide.com.br/images/fachada-lateral-grand-palais-moema-condominio-edificio.jpeg" />')
+popup.setHTML('This is the apartment I lived from 1992 to 2018<br /><img src="http://www.imovelguide.com.br/images/fachada-lateral-grand-palais-moema-condominio-edificio.jpeg" />')
 marker.setPopup(popup)
 
 // Marcador1 - First Apartment
