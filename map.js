@@ -53,15 +53,15 @@ map.addControl(geolocate, 'top-left')
 
 // Marcador0
 // this is an event handler
+let marker = new mapboxgl.Marker()
+marker.setLngLat([ -46.65673,-23.60534])
+marker.addTo(map)
 geolocate.on('geolocate', function(event) {
    console.log(event.coords)
     // create new variables to store the attributes we're interested in from the event
     let lng = event.coords.longitude
     let lat = event.coords.latitude
-let marker = new mapboxgl.Marker()
-marker.setLngLat([ -46.65673,-23.60534])
-marker.addTo(map)
-
+    
 let popup = new mapboxgl.Popup()
 popup.setHTML('This is the apartment I lived from 1992 to 2018<br /><img src="http://www.imovelguide.com.br/images/fachada-lateral-grand-palais-moema-condominio-edificio.jpeg" />')
 marker.setPopup(popup)
