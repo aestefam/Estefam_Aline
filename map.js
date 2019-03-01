@@ -43,12 +43,7 @@ let geolocate = new mapboxgl.GeolocateControl({
 
 map.addControl(geolocate, 'top-left')
 
-// this is an event handler
-geolocate.on('geolocate', function(event) {
-   console.log(event.coords)
-    // create new variables to store the attributes we're interested in from the event
-    let lng = event.coords.longitude
-    let lat = event.coords.latitude
+
 
     // debug
     console.log('geolocated:', lng, lat)
@@ -57,6 +52,12 @@ geolocate.on('geolocate', function(event) {
     document.getElementById('info').innerHTML = lng.toFixed(5) + "," + lat.toFixed(5)
 
 // Marcador0
+// this is an event handler
+geolocate.on('geolocate', function(event) {
+   console.log(event.coords)
+    // create new variables to store the attributes we're interested in from the event
+    let lng = event.coords.longitude
+    let lat = event.coords.latitude
 let marker = new mapboxgl.Marker()
 marker.setLngLat([ -46.65673,-23.60534])
 marker.addTo(map)
