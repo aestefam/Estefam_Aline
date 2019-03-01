@@ -57,7 +57,7 @@ geolocate.on('geolocate', function(event) {
 })
 
 // Marcador0
-// this is an event handler {
+// this is an event handler
 let marker = new mapboxgl.Marker()
 marker.setLngLat([ -46.65673,-23.60534])
 marker.addTo(map)
