@@ -102,4 +102,4 @@ let popup4 = new mapboxgl.Popup()
 popup4.setHTML('This is my Alma Mater (2006 to 2011) <br /><img src="https://i.ytimg.com/vi/8CYPOiJp2_I/maxresdefault.jpg" />')
 marker4.setPopup(popup4)
 
-})
+
