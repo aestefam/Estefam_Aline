@@ -47,7 +47,7 @@ geolocate.on('geolocate', function(event) {
     // create new variables to store the attributes we're interested in from the event
     let lng = event.coords.longitude
     let lat = event.coords.latitude
-
+})
 
     // debug
     console.log('geolocated:', lng, lat)
